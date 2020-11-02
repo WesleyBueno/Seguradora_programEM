@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Cadastro Cliente</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+    <h1>Novo Cliente</h1>
+    <form action="/cliente/insere" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome"><br><br>
+        <label for="idade">Idade:</label>
+        <input type="text" id="idade" name="idade"><br><br>
+        <label for="endereço">Endereço:</label>
+        <input type="text" id="endereco" name="endereco"><br><br>
+        <p><input type="submit" value="Enviar" /> <input type="reset" value="Limpar" /></p>
+    </form>
+    <a href="/cliente/listac"><button>Lista de clientes</button></a>
+    <br>
+    <br>
+    <h1>Novo Dependente</h1>
+    <form action="/dependente/insere" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome"><br><br>
+        <label for="idade">Idade:</label>
+        <input type="text" id="idade" name="idade"><br><br>
+        <label for="cliente">cliente:</label>
+        <input type="text" id="cliente" name="cliente"><br><br>
+        <p><input type="submit" value="Enviar" /> <input type="reset" value="Limpar" /></p>
+    </form>
+    <a href="/dependente/listad"><button>Lista de dependentes</button></a>
+
+</body>
+
+</html>
